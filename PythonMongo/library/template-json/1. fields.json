@@ -1,0 +1,16 @@
+{
+    "fields" : [{
+        "targetKey": "caption",
+        "action": "add",
+        "value" : "New Activity"
+    },
+    {
+        "targetKey": "caption",
+        "action": "update",
+        "value" : "Modified Activity"
+    },
+    {
+        "targetKey": "caption",
+        "action": "delete"
+    }]
+}

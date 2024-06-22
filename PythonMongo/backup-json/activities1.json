@@ -1,0 +1,45 @@
+{
+    "_id": "18c749948b454fd8ab83322aec530c20",
+    "name": "JOMINJOHGN",
+    "type": "JOMINJOHGN Activity",
+    "groupId": "20afac1778c1d14d2177103596003bb0",
+    "caption": "JOMINJOHGN Activity",
+    "isStartNode": true,
+    "bgColor": "0xe4e4e4",
+    "jomin": 0,
+    "webserviceValidator": null,
+    "canAddPorts": false,
+    "headerColor": "0x181F6D",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [{
+        "elementId": null,
+        "label": "Parameter1",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": "value1",
+        "ordernum": 0
+    }, {
+        "elementId": null,
+        "label": "Parameter2",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": "value2",
+        "ordernum": 0
+    }],
+    "ports": [{
+        "label": "ok",
+        "mutable": false,
+        "ordernum": 0
+    }, {
+        "label": "falied",
+        "mutable": false,
+        "ordernum": 1
+    }],
+    "label": "Start Activity",
+    "_rev": "3"
+}

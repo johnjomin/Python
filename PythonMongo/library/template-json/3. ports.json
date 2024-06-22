@@ -1,0 +1,20 @@
+{
+    "ports" : [{
+        "action": "add",
+        "value" : {
+            "label": "Maybe",
+            "mutable": false,
+            "ordernum": 0
+        }
+    },
+    {
+        "label": "Maybe",
+        "targetKey": "mutable",
+        "action": "update",
+        "value" : true
+    },
+    {
+        "label": "Never",
+        "action": "delete"
+    }]
+}

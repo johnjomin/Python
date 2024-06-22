@@ -1,0 +1,35 @@
+{
+    "_id": "4C5B5BABA4094B5B9B8408CD57CCD522",
+    "_rev": 1,
+    "groupid": "F859C2BBE8C74505A58894AE974B425A",
+    "caption": "Manual Trigger",
+    "label": "Manual Trigger",
+    "name": "Manual Trigger",
+    "type": "Trigger",
+    "subType": "Manual",
+    "function": "Execute",
+    "isstartnode": true,
+    "bgcolor": "0xe4e4e4",
+    "webservicevalidator": "",
+    "needhq": false,
+    "needhqeditable": false,
+    "canaddports": false,
+    "headercolor": "0x226B76",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [],
+    "ports": [
+        {
+            "label": "ok",
+            "mutable": false,
+            "ordernum": 0
+        },
+        {
+            "label": "failed",
+            "mutable": false,
+            "ordernum": 1
+        }
+    ]
+}

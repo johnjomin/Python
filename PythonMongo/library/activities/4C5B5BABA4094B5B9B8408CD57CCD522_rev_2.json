@@ -1,0 +1,26 @@
+{
+    "parameters" : [{
+        "action": "add",
+        "value" : {
+                "elementId": null,
+                "label": "Active",
+                "type": "bool",
+                "isVisible": true,
+                "webService": null,
+                "value": null,
+                "ordernum": 0
+        }
+    },
+    {
+        "action": "add",
+        "value" : {
+                "elementId": null,
+                "label": "Priority",
+                "type": "enum",
+                "isVisible": true,
+                "webService": "workflow/systems/WFDesigner/Trigger/Priority",
+                "value": null,
+                "ordernum": 1
+        }
+    }]
+}

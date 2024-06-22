@@ -1,0 +1,50 @@
+# FROM python:3.8-slim-buster
+
+# # Make a directory for our application
+# WORKDIR /
+
+# # Install Dependencies
+# RUN python -m pip install pymongo
+
+# # Copy source code
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
+
+# # Run the application
+# CMD [ "python", "PythonScript.py" ]
+
+# #ENTRYPOINT [ "python", "database_setup.py" ]
+
+FROM python:3.8-slim-buster as base
+RUN pip install deepdiff pymongo
+
+RUN mkdir /work/
+WORKDIR /work/
+
+COPY ./src/requirements.txt /work/requirements.txt
+RUN pip install -r requirements.txt
+
+COPY ./src/ /work/
+
+
+####################
+# Debugger
+####################
+
+FROM base as debug
+#RUN pip install ptvsd
+RUN pip install ptvsd
+WORKDIR /work/
+#CMD python -m ptvsd --host 0.0.0.0 --port 5678 --wait PythonScript.py
+##--multiprocess -m flask run -h 0.0.0 -p 5000
+
+ENTRYPOINT [ "python", "-m", "ptvsd", "--listen", "0.0.0.0:5678", "--wait-for-client", "-m"]
+
+
+####################
+# Primary
+####################
+
+FROM base as primary
+
+ENTRYPOINT [ "python", "PythonScript.py" ]

@@ -1,0 +1,50 @@
+{
+    "_id": "anto-act-003",
+    "name": "anto-act-003",
+    "type": "anto-act-003",
+    "label": "anto-act-003",
+    "_rev": "1",
+    "groupId": "anto-fld-004",
+    "caption": "caption_anto3",
+    "isStartNode": false,
+    "bgColor": "0xe4e4e4",
+    "webserviceValidator": null,
+    "canAddPorts": true,
+    "headerColor": "0x181F6D",
+    "icon": "./icons/3rd/gv.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [{
+        "elementId": null,
+        "label": "Param_001",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": null,
+        "ordernum": 0
+    },
+    {
+        "elementId": null,
+        "label": "Param_002",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": null,
+        "ordernum": 1
+    }],
+    "ports": [{
+        "label": "ok",
+        "mutable": false,
+        "ordernum": 0
+    }, {
+        "label": "failed",
+        "mutable": false,
+        "ordernum": 1
+    },
+    {
+        "label": "exit",
+        "mutable": true,
+        "ordernum": 2
+    }]    
+}

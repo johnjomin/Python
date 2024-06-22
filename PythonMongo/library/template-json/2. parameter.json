@@ -1,0 +1,24 @@
+{
+    "parameters" : [{
+        "action": "add",
+        "value" : {
+                "elementId": null,
+                "label": "Workflow Name",
+                "type": "string",
+                "isVisible": true,
+                "webService": null,
+                "value": "John's Workflow",
+                "ordernum": 0
+        }
+    },
+    {
+        "label": "Workflow Name",
+        "targetKey": "value", 
+        "action": "update", 
+        "value" : "Mike's Workflow"
+    },
+    {
+        "label": "Mike's Workflow",
+        "action": "delete"
+    }]
+}

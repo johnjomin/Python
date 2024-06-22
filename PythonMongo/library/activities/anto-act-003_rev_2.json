@@ -1,0 +1,49 @@
+{
+    "fields" : [
+    {
+        "targetKey": "caption",
+        "action": "update",
+        "value" : "Modified Activity_anto3"
+    },
+    {
+        "targetKey": "caption_2",
+        "action": "add",
+        "value" : "New Activity_anto3"
+    }
+],
+"ports" : [{
+    "action": "add",
+    "value" : {
+        "label": "skip",
+        "mutable": true,
+        "ordernum": 3
+    }
+},
+{
+    "label": "exit",
+    "targetKey": "mutable",
+    "action": "update",
+    "value" : false
+}
+],
+"parameters" : [{
+    "action": "add",
+    "value" : {
+            "elementId": null,
+            "label": "Workflow Name",
+            "type": "string",
+            "isVisible": true,
+            "webService": null,
+            "value": "Workflow_003",
+            "ordernum": 2
+    }
+},
+{
+    "label": "Param_001",
+    "targetKey": "value", 
+    "action": "update", 
+    "value" : "test value xxx"
+}
+]
+
+}

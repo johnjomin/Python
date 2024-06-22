@@ -1,0 +1,38 @@
+{
+    "fields" : [
+    {
+        "targetKey": "caption",
+        "action": "delete"
+       
+    },
+    {
+        "targetKey": "caption_2",
+        "action": "update",
+        "value" : "New Activity_anto2_updated"
+    }
+],
+"ports" : [{
+    "label": "skip",
+    "action": "delete"
+    
+},
+{
+    "label": "exit",
+    "targetKey": "mutable",
+    "action": "update",
+    "value" : true
+}
+],
+"parameters" : [{
+    "label": "Workflow Name",
+    "action": "delete"
+},
+{
+    "label": "Param_002",
+    "targetKey": "editable", 
+    "action": "update", 
+    "value" : false
+}
+]
+
+}

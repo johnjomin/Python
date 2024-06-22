@@ -1,0 +1,13 @@
+version: "3.4"
+services:
+    python:
+        container_name: python
+        image: aimvector/python:1.0.0
+        build: 
+            context: ./
+            target: debug
+        volumes: 
+        - ./:/work
+        ports:
+            - 5003:5000
+            - 5678:5678

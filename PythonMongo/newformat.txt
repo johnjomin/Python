@@ -1,0 +1,146 @@
+    {
+        "name": "label2",
+        "action": "add",
+        "value" : "jomin"
+    },
+    {
+        "name": "label2",
+        "action": "delete",
+        "value" : "jomin"
+    },
+    {
+        "name": "label2",
+        "action": "update",
+        "value" : "alberto"
+    },
+    {
+        "name": "label2",
+        "action": "updateField",
+        "value" : "filippi"
+    }
+
+    /////////////////////////////////////////
+
+    "paramArray" : [{
+        "Label": "Rocco_Parameter1",
+        "action": "add",
+        "value" : true
+    },
+    {
+        "original-Label": "Sean_Parameter2",
+        "modified-Label": "batable",
+        "action": "update",
+        "value" : true
+    },
+    {
+        "label": "Parameter3",
+        "action": "delete"
+    }]
+
+    //////////////////////////////////////////
+    new = {pArray['name'] : pArray['value']}
+     if pArray['action'] == "add" or pArray['action'] == "update":
+            # ADD
+            workflowCollection.update({
+            '_id': info['_id']
+            },
+            {
+                '$push': {
+                    "parameters": {
+                        '$each': [new]
+                        }
+                }
+            })
+            ###Add new parameter
+
+/////////////////////////////////////////////////////////////////////////
+
+
+
+{
+    "_id": "12c749948b454fd8ab83322aec530c20",
+    "name": "JOMINJOHGN",
+    "type": "JOMINJOHGN Activity",
+    "groupId": "20afac1778c1d14d2177103596003bb0",
+    "caption": "JOMINJOHGN Activity",
+    "isStartNode": true,
+    "bgColor": "0xe4e4e4",
+    "webserviceValidator": null,
+    "canAddPorts": false,
+    "headerColor": "0x181F6D",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [{
+        "elementId": null,
+        "label": "Parameter1",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": "value1",
+        "ordernum": 0
+    }, {
+        "elementId": null,
+        "label": "Parameter2",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": "value2",
+        "ordernum": 0
+    }],
+    "ports": [{
+        "label": "ok",
+        "mutable": false,
+        "ordernum": 0
+    }, {
+        "label": "falied",
+        "mutable": false,
+        "ordernum": 1
+    }],
+    "label": "Start Activity",
+    "_rev": "3",
+    "jomin": 0
+}
+
+///////////////////////////////////////////////
+if pArray['action'] == "add" or pArray['action'] == "update":
+            # ADD
+            workflowCollection.update_one({
+            '_id': info['_id']
+            },
+            {
+                '$push': {
+                    "parameters": {
+                        '$each': {
+                            pArray['name']: pArray['value']
+                        }
+                        }
+                }
+            })
+
+//////////////////
+# update_one
+            # (
+            #     { 
+            #         '_id': result['_id'], 
+            #         'items': old
+            #     }, 
+            #         { 
+            #             '$set' : 
+            #             {
+            #                 'items.$' : new
+            #             }
+            #         }
+            #  )
+#####
+ elif pArray['action'] == "updateField":
+            # UPDATE FIELD
+            workflowCollection.find({
+            '_id': info['_id']
+            },
+            {
+                '$rename': {
+                    "parameters." + pArray['name']: "parameters." + pArray['value']
+                }
+            })

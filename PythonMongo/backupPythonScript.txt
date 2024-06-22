@@ -1,0 +1,120 @@
+#!/usr/bin/env python
+
+# Usage example:
+# python database_setup.py --mongodb localhost:27017 --accounts hillsboro newbury
+
+import pymongo
+from pymongo import MongoClient
+import pprint
+import os
+import json
+
+
+
+def mongoElementCollectionDict(workflowElementCollection):
+    elementsDictionary = {}
+    resultElements = workflowElementCollection.find()
+    for result in resultElements:
+        elementsDictionary[result['_id']] = result['_rev']
+    return elementsDictionary
+
+def mongoBrickCollectionDict(workflowBrickCollection):
+    bricksDictionary = {}
+    resultBricks = workflowBrickCollection.find()
+    for result in resultBricks:
+        bricksDictionary[result['_id']] = result['_rev']
+    return bricksDictionary
+    
+
+#=======================================================
+def createNewElement(info, filename, workflowElementCollection):
+    workflowElementCollection.insert_one(info)
+    print("Creating new Element from file: " + filename)
+
+def updateElement(info, filename, workflowElementCollection):
+    workflowElementCollection.update({
+        '_id': info['_id']
+    },
+    {
+        '$set': info
+    }, multi=True)
+    print("Updating Element from file: " + filename)
+
+def updateBrick(info, filename, workflowBrickCollection):
+    workflowBrickCollection.update({
+        '_id': info['_id']
+    },
+    {
+        '$set': info
+    }, multi=True)
+    print("Updating Brick from file: " + filename)
+#=======================================================
+
+def readElement(elementsDictionary, workflowElementCollection):
+    folderDictionary = {}
+    for path, dirs, files in os.walk('./library/folder'):
+        for f in files:
+            filePath = os.path.join(path, f)
+            with open(filePath) as json_file:
+                info = json.load(json_file)
+                folderDictionary[info['_id']] = info['_rev']
+                for element in elementsDictionary:
+                    if info['_id'] == element:
+                        if info['_rev'] == elementsDictionary.get(element):
+                            print("Nothing to change in folder: " + f)
+                            break
+                        else:
+                            updateElement(info, f, workflowElementCollection)
+                            break
+                    else:
+                        if info['_id'] not in elementsDictionary:
+                            createNewElement(info, f, workflowElementCollection)
+                            break
+
+
+
+def readBrick(bricksDictionary, workflowBrickCollection):
+    activitiesDictionary = {}
+    for path, dirs, files in os.walk('./library/activities'):
+        for f in files:
+            filePath = os.path.join(path, f)
+            with open(filePath) as json_file:
+                info = json.load(json_file)
+                activitiesDictionary[info['_id']] = info['_rev']
+                for brick in bricksDictionary:
+                    if info['_id'] == brick:
+                        if info['_rev'] == bricksDictionary.get(brick):
+                            print("Nothing to change in activities: " + f)
+                            break
+                        else:
+                            updateBrick(info, f, workflowBrickCollection)
+                            break
+
+def run():
+    MONGODB_REQUIRED = "SCS_MONGO_URL" not in os.environ
+    
+    cluster = MongoClient('mongodb://10.127.181.188:31234/?readPreference=primary&appname=MongoDB%20Compass&ssl=false')
+    #cluster = pymongo.MongoClient("mongodb+srv://jomin:jomin@cluster0.jesk5.mongodb.net/romstr1JOMIN?retryWrites=true&w=majority")
+    database = cluster["jominTest"]
+    workflowElementCollection = database["workflowelement"]
+    workflowBrickCollection = database["bricks"]
+
+
+    elementsDictionary = mongoElementCollectionDict(workflowElementCollection)
+    bricksDictionary = mongoBrickCollectionDict(workflowBrickCollection)
+
+    readElement(elementsDictionary, workflowElementCollection)
+    readBrick(bricksDictionary, workflowBrickCollection)
+
+# for path, dirs, files in os.walk('./library/folder'):
+#     for f in files:
+#         filename = os.path.join(path, f)
+#         with open(filename, 'r') as myFile:
+#             print(myFile.read())
+
+
+
+
+
+
+#================================

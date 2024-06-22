@@ -1,0 +1,47 @@
+{
+    "_id": "sample-activity-Id",
+    "_rev": "1",
+    "name": "Sample Activity",
+    "type": "Sample Activity",
+    "label": "Sample Activity",
+    "groupId": "sample-folder-Id",
+    "caption": "Sample Activity",
+    "subType": "...",
+    "function": "...",
+    "isStartNode": true,
+    "bgColor": "0xe4e4e4",
+    "webserviceValidator": null,
+    "canAddPorts": false,
+    "headerColor": "0x181F6D",
+    "icon": "./icons/3rd/gv.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [{
+        "elementId": null,
+        "label": "Sample Activity Parameter #1",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": null,
+        "ordernum": 0
+    },
+    {
+        "elementId": null,
+        "label": "Sample Activity Parameter #2",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": null,
+        "ordernum": 0
+    }],
+    "ports": [{
+        "label": "ok",
+        "mutable": false,
+        "ordernum": 0
+    }, {
+        "label": "failed",
+        "mutable": false,
+        "ordernum": 1
+    }]    
+}
