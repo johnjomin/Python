@@ -1,0 +1,6 @@
+{
+    "_id": "sample-folder-Id",
+    "label": "Sample Folder",
+    "_rev": 1,
+    "parentGroupId":"parent-folder-Id" // Remove this line in order to create this folder at root level 
+}

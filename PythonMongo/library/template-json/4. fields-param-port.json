@@ -1,0 +1,58 @@
+{
+        "fields" : [{
+            "targetKey": "caption",
+            "action": "add",
+            "value" : "New Activity"
+        },
+        {
+            "targetKey": "caption",
+            "action": "update",
+            "value" : "Modified Activity"
+        },
+        {
+            "targetKey": "caption",
+            "action": "delete"
+        }],
+
+    "parameters" : [{
+        "action": "add",
+        "value" : {
+                "elementId": null,
+                "label": "Workflow Name",
+                "type": "string",
+                "isVisible": true,
+                "webService": null,
+                "value": "John's Workflow",
+                "ordernum": 0
+        }
+    },
+    {
+        "label": "Workflow Name",
+        "targetKey": "value",
+        "action": "update",
+        "value" : "Mike's Workflow"
+    },
+    {
+        "label": "Mike's Workflow",
+        "action": "delete"
+    }],
+
+    "ports" : [{
+        "action": "add",
+        "value" : {
+            "label": "Maybe",
+            "mutable": false,
+            "ordernum": 0
+        }
+    },
+    {
+        "label": "Maybe",
+        "targetKey": "mutable",
+        "action": "update",
+        "value" : true
+    },
+    {
+        "label": "Never",
+        "action": "delete"
+    }]
+}

@@ -1,0 +1,10 @@
+{
+"parameters" : [
+{
+    "label": "Param_001",
+    "targetKey": "editable", 
+    "action": "update", 
+    "value" : false
+}
+]
+}

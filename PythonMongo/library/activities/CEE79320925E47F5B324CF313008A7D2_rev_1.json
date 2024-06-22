@@ -1,0 +1,34 @@
+{
+    "_id": "CEE79320925E47F5B324CF313008A7D2",
+    "_rev": 1,
+    "groupid": "DAB0181E74CC44D2BD9A7F58166BF6C4",
+    "caption": "End",
+    "label": "End",
+    "name": "End",
+    "type": "Workflow",
+    "subType": "End",
+    "function": "Execute",
+    "isstartnode": false,
+    "bgcolor": "0xe4e4e4",
+    "webservicevalidator": "",
+    "needhq": false,
+    "needhqeditable": false,
+    "canaddports": false,
+    "headercolor": "0x226B76",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [
+        {
+            "elementId": null,
+            "label": "Status",
+            "type": "enum",
+            "isVisible": true,
+            "webService": "workflow/systems/WFDesigner/End/Status",
+            "value": null,
+            "ordernum": 0
+        }
+    ],
+    "ports": []
+}

@@ -1,0 +1,54 @@
+{
+    "_id": "2BC90A8CE28546D690F84DE37B3633DD",
+    "_rev": 1,
+    "groupid": "518CAE8F7D0C4B83A4CD4BA278EB82C4",
+    "caption": "Metadata Export",
+    "label": "Metadata Export",
+    "name": "Metadata Export",
+    "type": "Asset",
+    "subType": "Asset Management",
+    "function": "Metadata Export",
+    "isstartnode": false,
+    "bgcolor": "0xe4e4e4",
+    "webservicevalidator": "",
+    "needhq": false,
+    "needhqeditable": false,
+    "canaddports": false,
+    "headercolor": "0x226B76",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [
+        {
+            "elementId": null,
+            "label": "Template",
+            "type": "enum",
+            "isVisible": true,
+            "webService": "workflow/systems/WFDesigner/MetadataExport/Templates",
+            "value": null,
+            "ordernum": 0
+        },
+        {
+            "elementId": null,
+            "label": "Target Location",
+            "type": "string",
+            "isVisible": true,
+            "webService": null,
+            "value": null,
+            "ordernum": 1
+        }
+    ],
+    "ports": [
+        {
+            "label": "ok",
+            "mutable": false,
+            "ordernum": 0
+        },
+        {
+            "label": "failed",
+            "mutable": false,
+            "ordernum": 1
+        }
+    ]
+}

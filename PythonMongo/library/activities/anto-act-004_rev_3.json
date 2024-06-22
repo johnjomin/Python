@@ -1,0 +1,18 @@
+{
+"parameters" : [
+{
+    "label": "Param_001",
+    "targetKey": "editable", 
+    "action": "update", 
+    "value" : false
+}
+],
+"fields" : [
+ 
+    {
+        "targetKey": "canAddPorts",
+        "action": "update",
+        "value" : true
+    }
+]
+}

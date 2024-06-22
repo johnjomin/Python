@@ -1,0 +1,52 @@
+{
+    "_id": "76ef15f4d18649bcb39322e2e09bf00e",
+    "name": "Test Activity 2",
+    "type": "Test Activity 2",
+    "groupId": "20afac1778c1d14d2177103596003bb0",
+    "caption": "Test Activity 2",
+    "isStartNode": false,
+    "bgColor": "0xe4e4e4",
+    "webserviceValidator": null,
+    "canAddPorts": false,
+    "headerColor": "0x181F6D",
+    "icon": "./icons/3rd/mantrics.png",
+    "deletable": false,
+    "deleted": false,
+    "fromElementId": null,
+    "parameters": [{
+        "elementId": null,
+        "label": "Param Boolean 1",
+        "type": "bool",
+        "isVisible": true,
+        "webService": null,
+        "value": "false",
+        "ordernum": 0
+    }, {
+        "elementId": null,
+        "label": "Parameter2",
+        "type": "string",
+        "isVisible": true,
+        "webService": null,
+        "value": "value2",
+        "ordernum": 0
+    }, {
+        "elementId": null,
+        "label": "Parameter3",
+        "type": "enum",
+        "isVisible": true,
+        "webService": "MyEnum",
+        "value": "",
+        "ordernum": 0
+    }],
+    "ports": [{
+        "label": "ok",
+        "mutable": false,
+        "ordernum": 0
+    }, {
+        "label": "falied",
+        "mutable": false,
+        "ordernum": 1
+    }],
+    "label": "Test Activity 2",
+    "_rev": "2"
+}
