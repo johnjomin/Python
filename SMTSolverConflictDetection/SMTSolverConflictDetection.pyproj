@@ -2,11 +2,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7a29d66a-dfd3-44f6-a5fc-b07b6479846a</ProjectGuid>
-    <ProjectHome>
-    </ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <ProjectGuid>ee562d3f-c214-4c71-805b-0e0352f30be8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>SMTSolverConflictDetection.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,10 +21,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="SMTSolverConflictDetection.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ImprovedPolicy\" />
     <Folder Include="SamplePolicy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CVC5.txt" />
+    <Content Include="ImprovedPolicy\Policy1.json" />
+    <Content Include="ImprovedPolicy\Policy2.json" />
+    <Content Include="ImprovedPolicy\Policy3.json" />
+    <Content Include="ImprovedPolicy\Policy4.json" />
+    <Content Include="ImprovedPolicy\Policy5.json" />
+    <Content Include="PolicyImprovement.md" />
     <Content Include="SamplePolicy\Policy1.json" />
     <Content Include="SamplePolicy\Policy2.json" />
     <Content Include="SamplePolicy\Policy3.json" />

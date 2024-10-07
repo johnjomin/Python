@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Jomin\\source\\repos\\SMTSolverConflictDetection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\source\\repos\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:SMTSolverConflictDetection.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 3397,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SMTSolverConflictDetection.py",
+              "DocumentMoniker": "C:\\Users\\Jomin\\source\\repos\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
+              "RelativeDocumentMoniker": "SMTSolverConflictDetection.py",
+              "ToolTip": "C:\\Users\\Jomin\\source\\repos\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
+              "RelativeToolTip": "SMTSolverConflictDetection.py",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-10-07T16:18:04.513Z",
+              "EditorCaption": ""
             }
           ]
         }
