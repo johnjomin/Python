@@ -12,7 +12,7 @@
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>SMTSolverConflictDetection</Name>
-    <RootNamespace>PythonApplication1</RootNamespace>
+    <RootNamespace>SMTSolverConflictDetection</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
