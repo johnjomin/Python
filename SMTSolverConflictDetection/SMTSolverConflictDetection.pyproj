@@ -40,6 +40,7 @@
     <Content Include="SamplePolicy\Policy3.json" />
     <Content Include="SamplePolicy\Policy4.json" />
     <Content Include="SamplePolicy\Policy5.json" />
+    <Content Include="WorkingSMT#1.txt" />
     <Content Include="Z3-Script.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

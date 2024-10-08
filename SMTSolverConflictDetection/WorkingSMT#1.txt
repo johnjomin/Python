@@ -1,0 +1,133 @@
+from z3 import *
+
+# Function to parse conditions into Z3 expressions
+def parse_conditions(conditions, operator):
+    exprs = []
+    for condition in conditions:
+        param, op, value = condition["parameter"], condition["operator"], condition["value"]
+        
+        # Create Z3 variables based on parameters
+        if isinstance(value, (int, float)):
+            z3_var = Real(param)
+        else:
+            z3_var = String(param)
+
+        # Map operators to Z3 expressions
+        if op == "==":
+            exprs.append(z3_var == value)
+        elif op == "!=":
+            exprs.append(z3_var != value)
+        elif op == ">":
+            exprs.append(z3_var > value)
+        elif op == ">=":
+            exprs.append(z3_var >= value)
+        elif op == "<":
+            exprs.append(z3_var < value)
+        elif op == "<=":
+            exprs.append(z3_var <= value)
+
+    # Combine expressions using the specified logical operator
+    if operator == "AND":
+        return And(*exprs)
+    elif operator == "OR":
+        return Or(*exprs)
+
+# Function to check for conflicts between two policies
+def check_policy_conflict(policy1, policy2):
+    s = Solver()
+
+    # Parse the conditions for each policy
+    policy1_conditions = parse_conditions(policy1["logic"]["conditions"], policy1["logic"]["operator"])
+    policy2_conditions = parse_conditions(policy2["logic"]["conditions"], policy2["logic"]["operator"])
+    
+    # Add the conditions to the solver
+    s.add(policy1_conditions)
+    s.add(policy2_conditions)
+    
+    # Check if both policies can be true simultaneously
+    return s.check() == sat
+
+# Main function to define policies and check conflicts
+def main():
+    # Policy Structures
+    policy1 = {
+        "name": "Policy1",
+        "version": 1,
+        "logic": {
+            "operator": "AND",
+            "conditions": [
+                {"parameter": "Device.Bandwidth", "operator": ">", "value": 5},
+                {"parameter": "Device.Temperature", "operator": "<", "value": 30}
+            ]
+        },
+        "actions": [
+            {"parameter": "Device.Fan", "operator": "==", "value": "ON"}
+        ]
+    }
+
+    policy2 = {
+        "name": "Policy2",
+        "version": 1,
+        "logic": {
+            "operator": "OR",
+            "conditions": [
+                {"parameter": "Device.Bandwidth", "operator": "<=", "value": 5},
+                {"parameter": "Device.Temperature", "operator": ">=", "value": 30}
+            ]
+        },
+        "actions": [
+            {"parameter": "Device.Fan", "operator": "==", "value": "OFF"}
+        ]
+    }
+
+    policy3 = {
+        "name": "Policy3",
+        "version": 1,
+        "logic": {
+            "operator": "AND",
+            "conditions": [
+                {"parameter": "Device.Bandwidth", "operator": ">=", "value": 10},
+                {"parameter": "Device.Temperature", "operator": "<", "value": 20}
+            ]
+        },
+        "actions": [
+            {"parameter": "Device.Cooler", "operator": "==", "value": "ON"}
+        ]
+    }
+
+    policy4 = {
+        "name": "Policy4",
+        "version": 1,
+        "logic": {
+            "operator": "AND",
+            "conditions": [
+                {"parameter": "Device.Bandwidth", "operator": "<", "value": 7},
+                {"parameter": "Device.Temperature", "operator": ">=", "value": 25}
+            ]
+        },
+        "actions": [
+            {"parameter": "Device.Cooler", "operator": "==", "value": "OFF"}
+        ]
+    }
+
+    # List of policies
+    policies = [policy1, policy2, policy3, policy4]
+    conflicts = []
+
+    # Check for conflicts between all pairs of policies
+    for i in range(len(policies)):
+        for j in range(i + 1, len(policies)):
+            if check_policy_conflict(policies[i], policies[j]):
+                conflicts.append((policies[i]["name"], policies[j]["name"]))
+
+    # Print out conflicting policy pairs
+    if conflicts:
+        print("Conflicting Policies:")
+        for conflict in conflicts:
+            print(f"{conflict[0]} and {conflict[1]}")
+    else:
+        print("No conflicts detected among policies.")
+
+# Execute the main function
+if __name__ == "__main__":
+    main()
