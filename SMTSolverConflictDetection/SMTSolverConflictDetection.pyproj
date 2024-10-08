@@ -25,16 +25,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ImprovedPolicy\" />
+    <Folder Include="Policies\" />
     <Folder Include="SamplePolicy\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CurrentPolicy-WorkingSMT.txt" />
     <Content Include="CVC5.txt" />
+    <Content Include="ImprovedPolicy-WorkingSMT.txt" />
     <Content Include="ImprovedPolicy\Policy1.json" />
     <Content Include="ImprovedPolicy\Policy2.json" />
     <Content Include="ImprovedPolicy\Policy3.json" />
     <Content Include="ImprovedPolicy\Policy4.json" />
     <Content Include="ImprovedPolicy\Policy5.json" />
+    <Content Include="Policies\Policy1.json" />
+    <Content Include="Policies\Policy2.json" />
+    <Content Include="Policies\Policy3.json" />
+    <Content Include="Policies\Policy4.json" />
+    <Content Include="Policies\Policy5.json" />
     <Content Include="PolicyImprovement.md" />
     <Content Include="SamplePolicy\Policy1.json" />
     <Content Include="SamplePolicy\Policy2.json" />

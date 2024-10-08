@@ -11,8 +11,24 @@
       "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:CurrentPolicy-WorkingSMT.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:SimplePolicy-WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy5.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:Policies\\Policy5.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy4.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:Policies\\Policy4.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy3.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:Policies\\Policy3.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:Policies\\Policy2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:Policies\\Policy1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +38,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 3397,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SMTSolverConflictDetection.py",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
+              "RelativeDocumentMoniker": "SMTSolverConflictDetection.py",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
+              "RelativeToolTip": "SMTSolverConflictDetection.py",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAQwF0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-10-08T12:13:59.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Policy5.json",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy5.json",
+              "RelativeDocumentMoniker": "Policies\\Policy5.json",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy5.json",
+              "RelativeToolTip": "Policies\\Policy5.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:13:09.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Policy4.json",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy4.json",
+              "RelativeDocumentMoniker": "Policies\\Policy4.json",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy4.json",
+              "RelativeToolTip": "Policies\\Policy4.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:13:04.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Policy3.json",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy3.json",
+              "RelativeDocumentMoniker": "Policies\\Policy3.json",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy3.json",
+              "RelativeToolTip": "Policies\\Policy3.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:12:58.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Policy2.json",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy2.json",
+              "RelativeDocumentMoniker": "Policies\\Policy2.json",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy2.json",
+              "RelativeToolTip": "Policies\\Policy2.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:12:36.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Policy1.json",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy1.json",
+              "RelativeDocumentMoniker": "Policies\\Policy1.json",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\Policies\\Policy1.json",
+              "RelativeToolTip": "Policies\\Policy1.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:12:30.1Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,35 +126,9 @@
               "RelativeDocumentMoniker": "CurrentPolicy-WorkingSMT.txt",
               "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\CurrentPolicy-WorkingSMT.txt",
               "RelativeToolTip": "CurrentPolicy-WorkingSMT.txt",
-              "ViewState": "AQIAANkAAAAAAAAAAADwv/cAAAAAAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAIwHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-10-08T02:49:04.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SMTSolverConflictDetection.py",
-              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
-              "RelativeDocumentMoniker": "SMTSolverConflictDetection.py",
-              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
-              "RelativeToolTip": "SMTSolverConflictDetection.py",
-              "ViewState": "AQIAABgBAAAAAAAAAAAAwCYBAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2024-10-07T16:18:04.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SimplePolicy-WorkingSMT#1.txt",
-              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt",
-              "RelativeDocumentMoniker": "SimplePolicy-WorkingSMT#1.txt",
-              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt",
-              "RelativeToolTip": "SimplePolicy-WorkingSMT#1.txt",
-              "ViewState": "AQIAAGcAAAAAAAAAAADwv4UAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-08T00:00:29.664Z",
               "EditorCaption": ""
             }
           ]
