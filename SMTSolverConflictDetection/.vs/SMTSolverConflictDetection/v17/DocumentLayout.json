@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:SMTSolverConflictDetection.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\CurrentPolicy-WorkingSMT.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:CurrentPolicy-WorkingSMT.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EE562D3F-C214-4C71-805B-0E0352F30BE8}|SMTSolverConflictDetection.pyproj|solutionrelative:SimplePolicy-WorkingSMT#1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WorkingSMT#1.txt",
-              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\WorkingSMT#1.txt",
-              "RelativeDocumentMoniker": "WorkingSMT#1.txt",
-              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\WorkingSMT#1.txt",
-              "RelativeToolTip": "WorkingSMT#1.txt",
-              "ViewState": "AQIAAGcAAAAAAAAAAADwv4UAAAAAAAAA",
+              "Title": "CurrentPolicy-WorkingSMT.txt",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\CurrentPolicy-WorkingSMT.txt",
+              "RelativeDocumentMoniker": "CurrentPolicy-WorkingSMT.txt",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\CurrentPolicy-WorkingSMT.txt",
+              "RelativeToolTip": "CurrentPolicy-WorkingSMT.txt",
+              "ViewState": "AQIAANkAAAAAAAAAAADwv/cAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-08T00:00:29.664Z",
+              "WhenOpened": "2024-10-08T02:49:04.114Z",
               "EditorCaption": ""
             },
             {
@@ -45,9 +49,22 @@
               "RelativeDocumentMoniker": "SMTSolverConflictDetection.py",
               "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SMTSolverConflictDetection.py",
               "RelativeToolTip": "SMTSolverConflictDetection.py",
-              "ViewState": "AQIAALAAAAAAAAAAAAAAwLgAAAAvAAAA",
+              "ViewState": "AQIAABgBAAAAAAAAAAAAwCYBAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2024-10-07T16:18:04.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SimplePolicy-WorkingSMT#1.txt",
+              "DocumentMoniker": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt",
+              "RelativeDocumentMoniker": "SimplePolicy-WorkingSMT#1.txt",
+              "ToolTip": "C:\\Users\\Jomin\\Desktop\\Programming Projects\\Python\\Python\\SMTSolverConflictDetection\\SimplePolicy-WorkingSMT#1.txt",
+              "RelativeToolTip": "SimplePolicy-WorkingSMT#1.txt",
+              "ViewState": "AQIAAGcAAAAAAAAAAADwv4UAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-08T00:00:29.664Z",
               "EditorCaption": ""
             }
           ]
